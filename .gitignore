@@ -1,0 +1,10 @@
+node_modules/
+recipe-tracker
+dist/
+config
+config.toml
+.parcel-cache/
+elm-stuff/
+.pnpm-debug.log
+.coverage/
+recipe-tracker

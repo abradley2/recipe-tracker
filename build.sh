@@ -1,0 +1,1 @@
+elm make frontend/Main.elm --optimize --output public/elm.js

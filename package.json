@@ -1,0 +1,25 @@
+{
+  "name": "recipe-tracker",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "directories": {
+    "test": "tests"
+  },
+  "scripts": {
+    "build": "go build && elm make frontend/Main.elm --optimize --output public/elm.js && uglifyjs public/elm.js --output public/elm.js",
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "lint": "npm run lint-js && npm run lint-elm",
+    "lint-js": "standard --fix public/js/**/*.js",
+    "lint-elm": "elm-format frontend/ --yes"
+  },
+  "author": "",
+  "license": "ISC",
+  "dependencies": {
+    "@abradley2/elm-coverage": "^0.3.0",
+    "elm-test": "^0.19.1-revision7",
+    "standard": "^16.0.3",
+    "tape": "^5.2.2",
+    "uglify-js": "^3.13.9"
+  }
+}
